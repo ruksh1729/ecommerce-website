@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="innovative2.css">
+    </head>
+    <body>
+        <h1 class="header">TheUrban</h1><hr>
+        <h1 align="center" style="color: lightcoral;">REGISTER YOURSELF</h1>
+        <form>
+        <table align="center">
+            <tr>
+                <td align="center">Username:</td>
+                <td align="center"><input type="text" placeholder="Enter your username" id="name"></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="center">Phone No. :</td>
+                <td align="center"><input type="number" required="10" id="n" placeholder="Enter your phone number"></td>
+            </tr>
+            <tr>
+                <td align="center">Age:</td>
+                <td align="center"><input type="number" required="2" placeholder="Enter your age" id="age"></td>
+            </tr>
+            <tr>
+                <td align="center">Address:</td>
+                <td align="center"><textarea rows="5" cols="20" placeholder="Enter your address" id="add"></textarea></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="center">Country:</td>
+                <td align="center"><select style="color: red;"><option>INDIA</option><option>USA</option><option>RUSSIA</option><option>CHINA</option><option>AUSTRALIA</option><option>UK</option></select></td>           
+            </tr>
+            <tr>
+                <td align="center">Email:</td>
+                <td align="center"><input type="email" id="email" placeholder="Enter your email-id"></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="center">Password:</td>
+                <td align="center"><input type="password" placeholder="Enter your password" id="pass"></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="center">Confirm Password:</td>
+                <td align="center"><input type="password" placeholder="Confirm your password" id="cpass"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="checkbox" id="check">By clicking this, you accept our Terms and Conditions</td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" value="SUBMIT" id="F" onclick="vf()"></td>
+                <td align="center"><input type="reset" value="RESET" id="F"></td>
+            </tr>
+        </table> 
+        </form>
+        <p class="footer">© 2023 All Rights Reserved</p>
+    </body>
+    <script>
+        function vf() {
+            var ch=0;
+            if(ch==0){ 
+                var name=document.getElementById("name");
+                if(name===''){
+                    alert("ENTER YOUR NAME");
+                    ch==1;
+                    return false;
+                }
+                var phoneInput = document.getElementById("n");
+                var phoneValue = phoneInput.value;
+                if(phoneValue.length !== 10) {
+                    alert("Please enter your details properly");
+                    return false; 
+                }
+                var age=document.getElementById("age");
+                if(age===''){
+                    alert("ENTER YOUR AGE");
+                    ch==1;
+                    return false;
+                }
+                var add=document.getElementById("add");
+                if(add===''){
+                    alert("ENTER YOUR ADDRESS");
+                    ch==1;
+                    return false;
+                }
+                var x=document.getElementById("email");
+                var y=x.value;
+                if(!y.includes("@gmail.com")){
+                    alert("Please Enter all the Details");
+                    ch==1;
+                    return false;
+                }
+                var pass=document.getElementById("pass");
+                if(z===''){
+                    alert("ENTER YOUR PASSWORD");
+                    ch==1;
+                    return false;
+                }
+                var z=pass.value;
+                if (z.length<8){
+                    alert("MINIMUM LENGTH OF PASSWORD SHOULD BE 8");
+                    ch==1;
+                    return false;
+                }
+                var pass=document.getElementById("cpass");
+                var cz=cpass.value;
+                if(cz!==z){
+                    alert("Confirm your password correctly");
+                }
+            }
+            let checkbox=document.getElementById("check");
+            if(checkbox.checked){}
+            else{
+                alert("Please accept the Terms and Conditions before submitting");
+                return false;
+            }
+            window.prompt("Enter the OTP that is sent to your Email-id:");
+            alert("You have registered successfully");
+            return true;     
+        }
+    </script>
+</html>

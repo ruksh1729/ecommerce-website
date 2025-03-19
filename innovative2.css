@@ -1,0 +1,57 @@
+body{
+    background:url(inoimg12.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    background:transparent;
+    color: red;
+    text-align: left;
+    padding: 18px;
+    border-radius: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer {
+    background:transparent;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 12px;
+    border-radius: 20px;
+}
+table {
+    width: 650px;
+    height: 650px;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:transparent;
+    border: 1px solid #444;
+    border-radius: 40px;
+    opacity: 0.7;
+    color: black;
+}
+td{
+    color: lightcoral;
+}
+input{
+    width: 200;
+    background: transparent;
+    border: none;
+    color: white;
+}
+select{
+    background: transparent;
+    border: none;
+}
+textarea{
+    background: transparent;
+    border: none;
+    color: white;
+}
+#F{
+   color: white;
+   transition: 0.3s; 
+}
+#F:hover{
+    color: red;
+}

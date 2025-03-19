@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="innovative3.css">
+    </head>
+    <body>
+        <h1 class="header">TheUrban</h1><hr>
+        <h3 style="color: red;" align="center">Place your order</h3>
+            <form>
+            <table align="center">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td>Phone No. :</td>
+                    <td><input type="number" required="10" id="n" placeholder="Enter phone number"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea cols="50" rows="5" id="add"placeholder="Enter your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><select style="color: red;"><option>INDIA</option><option>USA</option><option>RUSSIA</option><option>CHINA</option><option>AUSTRALIA</option><option>UK</option></select></td>           
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td>Mode of payment</td>
+                    <td><select style="color: red;"><option>Paytm</option><option>UPI</option><option>DEBIT CARD</option><option>CREDIT CARD</option><option>GPAY</option><option>CASH ON DELIVERY</option></select>
+                </tr>
+                <td><input type="submit" value="PLACE THE ORDER"  id="v" onclick="vf()"></td>
+                    <td><input type="reset" value="RESET" id="v"></td>
+            </table>
+            </form>
+            <p class="footer">© 2023 All Rights Reserved</p>
+        </body>
+        <script>
+            function vf() {
+            var phoneInput = document.getElementById("n");
+            var phoneValue = phoneInput.value;
+            
+            if (phoneValue.length !== 10) {
+                alert("Please Enter all the Details");
+                return false; 
+            }
+            var x=document.getElementById("email");
+            var y=x.value;
+            if(!y.includes("@gmail.com")){
+            alert("Please Enter all the Details");
+            return false;
+            }
+            var add=document.getElementById("add");
+            if(add===''){
+                alert("ENTER YOUR ADDRESS");
+                return false;
+            }
+            alert("Your Order has been placed successfully.");
+            return true;     
+        }   
+        </script>
+    </body>
+</html>

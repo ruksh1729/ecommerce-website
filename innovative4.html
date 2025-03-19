@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="innovative4.css">
+    </head>
+    <body>
+        <h1 class="header" >TheUrban</h1><hr>
+        <div><h3><marquee direction="left"style="color: red;">
+        TheUrban Welcomes you in the New Era of Online Shopping. DO SHOPPING NOW!!!</marquee></h3>
+        <div ng-app="" ng-init="q=0;qu=0;qua=0;quan=0;quant=0;quanti=0;quantit=0;quantity=0">
+        <table align="center">
+            <tr>
+                <td colspan="4" align="center"><h2 style="color: lightcoral;">Welcome to TheUrban</h2></td>
+            </tr>
+            <tr>
+                <td align="center"><img src="inopro1.jpeg"></td>
+                <td align="center"><img src="inopro2.jpeg"></td>
+                <td align="center"><img src="inopro3.jpeg"></td>
+                <td align="center"><img src="inopro4.jpeg"></td>
+            </tr>
+            
+            <tr class="t">
+                <td align="center" style="font-size: 25px; color: lightcoral;" ><b>Asus Rog Zephyrus</b></td>
+                <td align="center" style="font-size: 25px; color: lightcoral;"><b>HP Victus</b></td>
+                <td align="center" style="font-size: 25px; color: lightcoral;"><b>Google Pixel 8 Pro</b></td>
+                <td align="center" style="font-size: 25px; color: lightcoral;"><b>Iphone 15 Pro Max</b></td>
+            </tr>
+            <tr>
+                <td align="center">Quantity:<input type="number" ng-model="q" placeholder="Enter quantity"><br>Price:Rs.117000<br>
+                    <p ng-if="q!==undefined && q!==null && q!=='' && q!==0">Total=Rs.{{q*117000}}</p></td>
+                <td align="center">Quantity:<input type="number" ng-model="qu" placeholder="Enter quantity"><br>Price:Rs.73000<br>
+                    <p ng-if="qu!==undefined && qu!==null && qu!=='' && qu!==0">Total=Rs.{{qu*73000}}</p></td>
+                <td align="center">Quantity:<input type="number" ng-model="qua" placeholder="Enter quantity"><br>Price:Rs.88000<br>
+                    <p ng-if="qua!==undefined && qua!==null && qua!=='' && qua!==0">Total=Rs.{{qua*88000}}</p></td>
+                <td align="center">Quantity:<input type="number" ng-model="quan" placeholder="Enter quantity"><br>Price:Rs.134000<br>
+                    <p ng-if="quan!==undefined && quan!==null && quan!=='' && quan!==0">Total=Rs.{{quan*134000}}</p></td>
+            </tr>
+            <tr>
+                <td align="center"><img src="inopro5.jpeg"></td>
+                <td align="center"><img src="inopro6.jpeg"></td>
+                <td align="center"><img src="inopro7.jpeg"></td>
+                <td align="center"><img src="inopro8.jpeg"></td>
+            </tr>
+            <tr class="t">
+                <td align="center" style="font-size: 25px; color: lightcoral;"><b>Boat Nirvanna 550 Anc</b></td>
+                <td align="center" style="font-size: 25px; color: lightcoral;"><b>Sony IMX 990</b></td>
+                <td align="center" style="font-size: 25px; color: lightcoral;"><b>Boat Flair Pro</b></td>
+                <td align="center" style="font-size: 25px; color: lightcoral;"><b>Google Pixel Watch</b></td>
+            </tr>
+            <tr>
+                <td align="center">Quantity:<input type="number" ng-model="quant" placeholder="Enter quantity"><br>Price:Rs.3000<br>
+                    <p ng-if="quant!==undefined && quant!==null && quant!=='' && quant!==0">Total=Rs.{{quant*3000}}</p></td>
+                <td align="center">Quantity:<input type="number" ng-model="quanti" placeholder="Enter quantity"><br>Price:Rs.20000<br>
+                    <p ng-if="quanti!==undefined && quanti!==null && quanti!=='' && quanti!==0">Total=Rs.{{quanti*20000}}</p></td>
+                <td align="center">Quantity:<input type="number" ng-model="quantit" placeholder="Enter quantity"><br>Price:Rs.2500<br>
+                    <p ng-if="quantit!==undefined && quantit!==null && quantit!=='' && quantit!==0">Total=Rs.{{quantit*2500}}</p></td>
+                <td align="center">Quantity:<input type="number" ng-model="quantity" placeholder="Enter quantity"><br>Price:Rs.25000<br>
+                    <p ng-if="quantity!==undefined && quantity!==null && quantity!=='' && quantity!==0">Total=Rs.{{quantity*25000}}</p></td>
+            </tr>
+            <div class="t">
+            <tr>
+                <td colspan="4" style="color: lightcoral;">
+                    <p align="center" ng-if="q!==undefined && q!==null && q!=='' && q!==0">
+                        Asus Rog Zephyrus({{q*1}})--Rs.{{q*117000}}</p>
+                    <p align="center" ng-if="qu!==undefined && qu!==null && qu!=='' && qu!==0">
+                        HP Victus({{qu*1}})--Rs.{{qu*73000}}</p>
+                    <p align="center" ng-if="qua!==undefined && qua!==null && qua!=='' && qua!==0">
+                        Google Pixel 8 Pro({{qua*1}})--Rs.{{qua*88000}}</p>
+                    <p align="center" ng-if="quan!==undefined && quan!==null && quan!=='' && quan!==0">
+                        Iphone 15 Pro Max({{quan*1}})--Rs.{{quan*134000}}</p>
+                    <p align="center" ng-if="quant!==undefined && quant!==null && quant!=='' && quant!==0">
+                        Boat Nirvana 550 Anc({{quant*1}})--Rs.{{quant*3000}}</p>
+                    <p align="center" ng-if="quanti!==undefined && quanti!==null && quanti!=='' && quanti!==0">
+                        Sony IMX 990({{quanti*1}})--Rs.{{quanti*20000}}</p>
+                    <p align="center" ng-if="quantit!==undefined && quantit!==null && quantit!=='' && quantit!==0">
+                        Boat Flair Pro({{quantit*1}})--Rs.{{quantit*2500}}</p>
+                    <p align="center" ng-if="quantity!==undefined && quantity!==null && quantity!=='' && quantity!==0">
+                        Google Pixel Watch({{quantity*1}})--Rs.{{quantity*20000}}</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center" style="color: lightcoral;"><p ng-if="q!==undefined && q!==null && q!=='' && qu!==undefined && qu!==null && qu!==''
+                    && qua!==undefined && qua!==null && qua!=='' && quan!==undefined && quan!==null && quan!=='' 
+                    && quant!==undefined && quant!==null && quant!=='' && quanti!==undefined && quanti!==null && quanti!==''
+                    && quantit!==undefined && quantit!==null && quantit!=='' && quantity!==undefined && quantity!==null && quantity!==''">
+                    You are paying Rs.{{q*117000 + qu*73000 + qua*88000 + quan*134000 + quant*3000 + quanti*20000 + quantit*2500 + quantity*25000}}</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"><button style="font-size: 20px; background-color: #444; border-radius: 25px;"><a href="innovative5.html" style="color: red; ">Place Order</a></button></td>
+            </tr>
+            </div>
+        </table>
+        </div>
+        <p class="footer">© 2023 All Rights Reserved</p>
+    </body>
+</html>
