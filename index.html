@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigger</title>
+
+    <link rel="stylesheet" type="text/css" href="innovative1.css">
+</head>
+
+<body>
+    <ul>
+        <div class="header">
+            <li style="font-size: 30px; color: red;" align="left">TheUrban</li>
+            <div align="right">
+                <li><a href="innovative4.html">Shopping</a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="innovative2.html">About Us</a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="innovative6.html">Contact Us</a></li>
+            </div>
+        </div>
+    </ul>
+    <h3>
+        <marquee direction="left" style="color:red;">
+            TheUrban Welcomes you in the New Era of Online Shopping. GO SHOP NOW!!!</marquee>
+    </h3>
+    <hr>
+    <form>
+        <table align="center">
+            <tr>
+                <td colspan="2">
+                    <h2 align="center">Login</h2>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Username:</td>
+                <td align="center"><input type="text" placeholder="Enter your Name" id="name"></td>
+            </tr>
+            <tr>
+                <td align="center">Email:</td>
+                <td align="center"><input type="email" placeholder="Enter your email" id="e"></td>
+            </tr>
+            <tr>
+                <td align="center">Password:</td>
+                <td align="center"><input type="password" placeholder="Enter Password" id="pass"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" value="SUBMIT" style="font-size: 15px;" id="G"
+                        onclick="vf()"></td>
+            </tr>
+            <tr>
+                <th colspan="2" style="color: white;">
+                    <h3>Don't have an account?</h3>
+                    <h3><a href="innovative3.html" style="color: lightcoral; ">Register Here</a></h3>
+                </th>
+            </tr>
+        </table>
+    </form>
+    <p class="footer">© 2023 All Rights Reserved</p>
+</body>
+<script>
+    function vf() {
+        var ch = 0;
+        if (ch == 0) {
+            var name = document.getElementById("name");
+            if (name === '') {
+                alert("ENTER YOUR NAME");
+                ch == 1;
+                return false;
+            }
+            var x = document.getElementById("e");
+            var y = x.value;
+            if (!y.includes("@gmail.com")) {
+                alert("Please Enter all the Details");
+                ch == 1;
+                return false;
+            }
+            var pass = document.getElementById("pass");
+            if (z === '') {
+                alert("ENTER YOUR PASSWORD");
+                ch == 1;
+                return false;
+            }
+            var z = pass.value;
+            if (z.length < 8) {
+                alert("MINIMUM LENGTH OF PASSWORD SHOULD BE 8");
+                ch == 1;
+                return false;
+            }
+        }
+        if (ch == 0) {
+            o = window.prompt("Enter the OTP that is sent to your Email-id:");
+            if (o.length == 6) {
+                alert("You have registered successfully");
+                return true;
+            }
+            else {
+                alert("Wrong OTP, please try again");
+                return false;
+            }
+        }
+    }
+
+</script>
+
+</html>
